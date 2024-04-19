@@ -41,12 +41,15 @@ nav{
 
 nav ul a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #E3DAC9;
 }
-
+ 
+nav ul img{
+  height: 30px;
+}
 .home2{
   border: 2px solid white;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 1px 41px;
   display: flex;
   flex-direction: row;
@@ -54,10 +57,12 @@ nav ul a{
   align-items: center;
   background-color: #2C2C2C;
 }
-
+.home2 :hover{
+  color:#591D1D
+}
 .fav{
     border: 2px solid white;
-    border-radius: 4px;
+    border-radius: 20px;
     list-style: none;
     padding: 1px 30px;
     display: flex;
@@ -65,10 +70,12 @@ nav ul a{
     align-items: center;
     background-color: #2C2C2C;
   }
-
+  .fav :hover{
+    color:#591D1D
+  }
 .regioes{
   border: 2px solid white;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 1px 35px;
   display: flex;
   list-style: none;
@@ -76,10 +83,13 @@ nav ul a{
   align-items: center;
   background-color: #2C2C2C;
 }
+.regioes :hover{
+  color:#591D1D
+}
 
 .carrinho{
   border: 2px solid white;
-  border-radius: 4px;
+  border-radius: 20px;
   list-style: none;
   padding: 1px 33px;
   display: flex;
@@ -87,29 +97,35 @@ nav ul a{
   align-items: center;
   background-color: #2C2C2C;
 }
-
+.carrinho :hover{
+  color:#591D1D
+}
 .sobrenos{
   border: 2px solid white;
   list-style: none;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 1px 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #2C2C2C;
 }
+.sobrenos :hover{
+  color:#591D1D
+}
 
 .logout{
   border: 1px solid white;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 1px 0px;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
-
-
+}
+.logout :hover{
+  color:#591D1D
 }
 .barraLateral{
   border: 1px solid rgba(255, 255, 255, 0);
@@ -124,9 +140,12 @@ nav ul a{
 }
 
 .barrapesquisa{
+  width: 50px;
+  height: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: first baseline;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
 
 .barrapesquisa input{
@@ -135,6 +154,9 @@ nav ul a{
   background-repeat: no-repeat;
   background-size: 20px 20px;
   padding-left: 35px;
+  background-color: #d9d9d931;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 .produtos {
@@ -142,5 +164,5 @@ nav ul a{
   flex-direction: row;
   align-items: baseline;
   background-image: url(http://127.0.0.1:5500/CK2/Images/produtos/background.png);
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
