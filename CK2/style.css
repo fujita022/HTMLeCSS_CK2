@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: "Roboto";
+    background-color: #99a6e8;
+    color: rgb(255, 255, 255);
+}
+.agnello{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: linear-gradient(90deg, #161616 0.14%, #2B0303 98.22%);
+  padding: 0 auto;
+  margin: 0 auto;
+  
+}
+home{
+  display: flex;
+  align-items: center;
+  
+}
+
+nav{
+  display: flex;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+    flex-direction: column;
+}
+
+nav ul img{
+  width: 40px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.home2{
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 1px 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2C2C2C;
+}
+
+.fav{
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 1px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2C2C2C;
+  }
+
+.regioes{
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 1px 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2C2C2C;
+}
+.carrinho{
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 1px 33px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2C2C2C;
+}
+
+.sobrenos{
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 1px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2C2C2C;
+}
+.logout{
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 1px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2C2C2C;
+}
+.barraLateral{
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 30px 0px;
+  width: 14%;
+  display: flex;
+  justify-content: center;
+  background-color: #2C2C2C;
+}
+.barrapesquisa{
+  display: flex;
+  justify-content: end;
+  width: -55%;
+  align-content: end;
+}
+.p1{
+  display: flex;
+  flex-direction: column;
+}
