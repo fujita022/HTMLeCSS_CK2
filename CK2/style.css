@@ -7,7 +7,7 @@ padding: 0;
 
 body{
     font-family: "Roboto";
-    background-color: #99a6e8;
+    background-color: #ffffff;
     color: rgb(255, 255, 255);
 }
 .agnello{
@@ -24,35 +24,24 @@ body{
   background: linear-gradient(90deg, #161616 0.14%, #2B0303 98.22%);
   padding: 0 auto;
   margin: 0 auto;
-  
 }
-home{
+.home{
   display: flex;
   align-items: center;
-  
+  justify-content: center;
+  text-size-adjust: 1px;
+  list-style: none;
+  text-decoration: underline;
 }
 
 nav{
   display: flex;
-}
-
-
-nav ul{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    list-style: none;
-    flex-direction: column;
-}
-
-nav ul img{
-  width: 40px;
+  flex-direction: row;
 }
 
 nav ul a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .home2{
@@ -61,6 +50,7 @@ nav ul a{
   padding: 1px 41px;
   display: flex;
   flex-direction: row;
+  list-style: none;
   align-items: center;
   background-color: #2C2C2C;
 }
@@ -68,6 +58,7 @@ nav ul a{
 .fav{
     border: 2px solid white;
     border-radius: 4px;
+    list-style: none;
     padding: 1px 30px;
     display: flex;
     flex-direction: row;
@@ -80,13 +71,16 @@ nav ul a{
   border-radius: 4px;
   padding: 1px 35px;
   display: flex;
+  list-style: none;
   flex-direction: row;
   align-items: center;
   background-color: #2C2C2C;
 }
+
 .carrinho{
   border: 2px solid white;
   border-radius: 4px;
+  list-style: none;
   padding: 1px 33px;
   display: flex;
   flex-direction: row;
@@ -96,6 +90,7 @@ nav ul a{
 
 .sobrenos{
   border: 2px solid white;
+  list-style: none;
   border-radius: 4px;
   padding: 1px 30px;
   display: flex;
@@ -103,30 +98,49 @@ nav ul a{
   align-items: center;
   background-color: #2C2C2C;
 }
+
 .logout{
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 4px;
-  padding: 1px 30px;
+  padding: 1px 0px;
+  list-style: none;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  background-color: #2C2C2C;
+  width: 200px;
+
+
 }
 .barraLateral{
   border: 1px solid rgba(255, 255, 255, 0);
   padding: 30px 0px;
-  width: 14%;
-  display: flex;
-  justify-content: center;
-  background-color: #2C2C2C;
-}
-.barrapesquisa{
-  display: flex;
-  justify-content: end;
-  width: -55%;
-  align-content: end;
-}
-.p1{
+  margin: 0;
+  width: 500px;
+  height: 550px;
+  list-style: none;
   display: flex;
   flex-direction: column;
+  background-color: #2C2C2C;
+}
+
+.barrapesquisa{
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+}
+
+.barrapesquisa input{
+  background-image: url('http://127.0.0.1:5500/CK2/Images/produtos/pesquisa.png');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding-left: 35px;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  background-image: url(http://127.0.0.1:5500/CK2/Images/produtos/background.png);
+background-repeat: no-repeat;
 }
