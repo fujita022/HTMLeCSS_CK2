@@ -168,7 +168,7 @@ nav ul img{
 }
 
 .barrapesquisa input{
-  background-image: url('http://127.0.0.1:5500/CK2/Images/produtos/pesquisa.png');
+  background-image: url('https://cdn-icons-png.flaticon.com/512/149/149852.png');
   background-position: 10px center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
@@ -182,9 +182,9 @@ nav ul img{
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  background-image: url(http://127.0.0.1:5500/CK2/Images/produtos/background.png);
+  background-image: url(https://gabrielmarinho.com/wp-content/uploads/2013/02/300400_2090471785132_106445699_n.jpg?w=720);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 1500px;
 }
 
 .produto.container {
