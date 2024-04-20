@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 *{
+max-height: 800px;
 margin: 0;
 padding: 0;
 }
@@ -9,6 +10,8 @@ body{
     font-family: "Roboto";
     background-color: #ffffff;
     color: rgb(255, 255, 255);
+    max-height: calc(100vh - 100px);
+    overflow-y:hidden;
 }
 .agnello{
   display: flex;
@@ -140,8 +143,9 @@ nav ul img{
 }
 
 .barrapesquisa{
-  width: 50px;
-  height: 15px;
+  padding: 10px 80px;
+  width: 80px;
+  height: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -166,3 +170,37 @@ nav ul img{
   background-image: url(http://127.0.0.1:5500/CK2/Images/produtos/background.png);
   background-repeat: no-repeat;
 }
+
+.produto.container {
+  padding-top: 10px;
+  height: 200px;
+
+}
+
+.produto-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product p {
+  margin-top: 5px;
+}
+
