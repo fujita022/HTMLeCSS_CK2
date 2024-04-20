@@ -24,7 +24,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   border: 1px solid rgba(255, 255, 255, 0);
-  background: linear-gradient(90deg, #161616 0.14%, #2B0303 98.22%);
+  background: linear-gradient(90deg, #2C2C2C 15%, #2B0303 85%);
   padding: 0 auto;
   margin: 0 auto;
 }
@@ -35,83 +35,98 @@ body{
   text-size-adjust: 1px;
   list-style: none;
   text-decoration: underline;
+  font-size: 60px;
+
 }
 
 nav{
   display: flex;
   flex-direction: row;
+
 }
 
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-direction: column;
+}
 nav ul a{
     text-decoration: none;
     color: #E3DAC9;
+    
 }
  
 nav ul img{
-  height: 30px;
+  height: 40px;
 }
 .home2{
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 20px;
-  padding: 1px 41px;
+  padding: 1px 21px;
   display: flex;
   flex-direction: row;
   list-style: none;
   align-items: center;
-  background-color: #2C2C2C;
+  justify-content: space-evenly;
+  background-color: #86808036;
 }
 .home2 :hover{
   color:#591D1D
 }
 .fav{
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 20px;
     list-style: none;
     padding: 1px 30px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    background-color: #2C2C2C;
+    background-color: #86808036;
   }
   .fav :hover{
     color:#591D1D
   }
 .regioes{
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 20px;
   padding: 1px 35px;
   display: flex;
   list-style: none;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
-  background-color: #2C2C2C;
+  background-color: #86808036;
 }
 .regioes :hover{
   color:#591D1D
 }
 
 .carrinho{
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 20px;
   list-style: none;
   padding: 1px 33px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  background-color: #2C2C2C;
+  background-color: #86808036;
 }
 .carrinho :hover{
   color:#591D1D
 }
 .sobrenos{
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0);
   list-style: none;
   border-radius: 20px;
-  padding: 1px 30px;
+  padding: 1px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #2C2C2C;
+  justify-content: center;
+  background-color: #86808036;
 }
 .sobrenos :hover{
   color:#591D1D
@@ -132,7 +147,7 @@ nav ul img{
 }
 .barraLateral{
   border: 1px solid rgba(255, 255, 255, 0);
-  padding: 30px 0px;
+  padding: 100px 14px;
   margin: 0;
   width: 500px;
   height: 550px;
@@ -169,6 +184,7 @@ nav ul img{
   align-items: baseline;
   background-image: url(http://127.0.0.1:5500/CK2/Images/produtos/background.png);
   background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .produto.container {
@@ -179,6 +195,7 @@ nav ul img{
 
 .produto-lista {
   display: flex;
+  border: none;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
@@ -190,17 +207,15 @@ nav ul img{
   width: 300px;
   margin: 20px;
   padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
   text-align: center;
 }
 
 .product a img {
   max-width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 .product p {
   margin-top: 5px;
 }
-
