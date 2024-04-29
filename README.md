@@ -2,7 +2,7 @@ Erick Fujita              RM556096
 
 Rodrigo Hiroshi           RM557374 
 
-Vinicius Pinheiro         
+Vinicius Pinheiro         RM558218
 
 Carlos Henrique           RM558003
 
