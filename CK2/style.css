@@ -21,9 +21,15 @@ header{
   background: linear-gradient(90deg, #2C2C2C 15%, #2B0303 85%);
   padding: 0 auto;
   margin: 0 auto;
-
 }
 
+header h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  padding-inline-start: 900px;
+}
 
 .agnello{
   display: flex;
