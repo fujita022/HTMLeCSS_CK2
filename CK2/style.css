@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 *{
@@ -6,37 +7,38 @@ margin: 0;
 padding: 0;
 }
 
-body{
-    zoom: 0.9 ;
-    font-family: "Roboto";
-    background-color: #ffffff;
-    color: rgb(255, 255, 255);
-    max-height: calc(100vh - 100px);
-    overflow-y:hidden;
-}
-.agnello{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+.container{
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto";
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
-.header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 1px solid rgba(255, 255, 255, 0);
+header{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 4px;
+  grid-row-gap: 0px;
   background: linear-gradient(90deg, #2C2C2C 15%, #2B0303 85%);
   padding: 0 auto;
   margin: 0 auto;
+  height: 120px;
+  align-items: center;
 }
-.home{
+
+.agnello { grid-area: 1 / 1 / 2 / 2; }
+.home { grid-area: 1 / 2 / 2 / 3; }
+
+.agnello{
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-size-adjust: 1px;
-  list-style: none;
-  text-decoration: underline;
-  font-size: 60px;
+}
+
+.home{
+ display: flex;
+ justify-self: center;
 
 }
 
@@ -53,109 +55,49 @@ nav ul{
   flex-direction: column;
 }
 nav ul a{
-    text-decoration: none;
-    color: #E3DAC9;
-    
-}
- 
-nav ul img{
-  height: 40px;
-}
-.home2{
-  border: 2px solid rgba(255, 255, 255, 0);
-  border-radius: 20px;
-  padding: 1px 21px;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #86808036;
-}
-.home2 :hover{
-  color:#591D1D
-}
-.fav{
-    border: 2px solid rgba(255, 255, 255, 0);
-    border-radius: 20px;
-    list-style: none;
-    padding: 1px 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #86808036;
-  }
-  .fav :hover{
-    color:#591D1D
-  }
-.regioes{
-  border: 2px solid rgba(255, 255, 255, 0);
-  border-radius: 20px;
-  padding: 1px 35px;
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  background-color: #86808036;
-}
-.regioes :hover{
-  color:#591D1D
+  text-decoration: none;
+  color: white;
 }
 
-.carrinho{
-  border: 2px solid rgba(255, 255, 255, 0);
-  border-radius: 20px;
-  list-style: none;
-  padding: 1px 33px;
+aside{
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 40px 0px;
+  width: 45%;
+  background-color: #2C2C2C;
+}
+
+aside nav ul div{
+  border: 2px solid rgb(49, 49, 49);
+  border-radius: 10px;
+  padding: 1px 40px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #86808036;
-}
-.carrinho :hover{
-  color:#591D1D
-}
-.sobrenos{
-  border: 2px solid rgba(255, 255, 255, 0);
   list-style: none;
-  border-radius: 20px;
-  padding: 1px 20px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  background-color: #86808036;
+  background-color: #252525;
 }
-.sobrenos :hover{
-  color:#591D1D
+
+aside nav ul div :hover{
+  color:#2B0303
 }
 
 .logout{
-  border: 1px solid white;
-  border-radius: 20px;
-  padding: 1px 0px;
-  list-style: none;
+  margin-top: 180px;
+  border: 2px solid rgb(49, 49, 49);
+  border-radius: 10px;
+  padding: 1px 40px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  list-style: none;
   align-items: center;
-  width: 200px;
+  background-color: #252525;
 }
+
 .logout :hover{
-  color:#591D1D
-}
-.barraLateral{
-  border: 1px solid rgba(255, 255, 255, 0);
-  padding: 100px 14px;
-  margin: 0;
-  width: 500px;
-  height: 550px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  background-color: #2C2C2C;
+  color: #2B0303;
 }
 
 .barrapesquisa{
@@ -191,7 +133,6 @@ nav ul img{
 .produto.container {
   padding-top: 10px;
   height: 200px;
-
 }
 
 .produto-lista {
@@ -205,11 +146,7 @@ nav ul img{
 }
 
 .product {
-  width: 300px;
-  margin: 20px;
-  padding: 15px;
-
-  text-align: center;
+  padding: 30px;
 }
 
 .product a img {
