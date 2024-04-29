@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 *{
-max-height: 800px;
 margin: 0;
 padding: 0;
+}
+
+body{
+  zoom: 1.25;
 }
 
 .container{
