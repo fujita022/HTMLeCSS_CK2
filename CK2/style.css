@@ -11,10 +11,9 @@ body{
 }
 
 .container{
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   font-family: "Roboto";
-  background-color: #ffffff;
   color: rgb(255, 255, 255);
 }
 
@@ -32,7 +31,8 @@ header{
 }
 
 .agnello { grid-area: 1 / 1 / 2 / 2; }
-.home { grid-area: 1 / 2 / 2 / 3; }
+
+.home { grid-area: 1 / 1 / 2 / 3; }
 
 .agnello{
   display: flex;
@@ -43,6 +43,7 @@ header{
  display: flex;
  justify-self: center;
  text-decoration: underline;
+ font-size: x-large;
 }
 
 nav{
@@ -54,7 +55,6 @@ nav{
 nav ul{
   display: flex;
   justify-content: space-around;
-  gap: 10px;
   flex-direction: column;
 }
 nav ul a{
@@ -65,16 +65,21 @@ nav ul a{
 aside{
   display: flex;
   justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0);
-  padding: 40px 0px;
-  width: 45%;
+  align-items: flex-start;
+  border: 1px solid rgba(112, 102, 102, 0);
+  padding: 0px 0px;
+  width: 20%;
   background-color: #2C2C2C;
+}
+
+aside nav ul{
+  margin-top: 30px;
 }
 
 aside nav ul div{
   border: 2px solid rgb(49, 49, 49);
   border-radius: 10px;
-  padding: 1px 40px;
+  padding: 1px 9px;
   margin-top: 10px;
   display: flex;
   flex-direction: row;
@@ -88,10 +93,10 @@ aside nav ul div :hover{
 }
 
 .logout{
-  margin-top: 100px;
+  margin-top: 130px;
   border: 2px solid rgb(49, 49, 49);
   border-radius: 10px;
-  padding: 1px 40px;
+  padding: 1px 30px;
   display: flex;
   flex-direction: row;
   list-style: none;
