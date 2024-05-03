@@ -11,7 +11,6 @@ body{
 }
 
 .container{
-  height: 100%;
   width: 100vw;
   font-family: "Roboto";
   color: rgb(255, 255, 255);
