@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+html{
+  height: 200px;
+}
+
 *{
 margin: 0;
 padding: 0;
@@ -8,10 +12,13 @@ padding: 0;
 
 body{
   zoom: 1.1;
+  overflow-y: hidden;
+  overflow-x:hidden;
 }
 
 .container{
   width: 100vw;
+  height: fit-content;
   font-family: "Roboto";
   color: rgb(255, 255, 255);
 }
@@ -62,6 +69,7 @@ nav ul a{
 }
 
 aside{
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: flex-start;
